@@ -4,10 +4,10 @@
 export const CHECKOUT_URL = "https://pay.hotmart.com/XXXXXXX";
 
 /** Correo de soporte al cliente */
-export const SUPPORT_EMAIL = "soporte@entrenamientodefutbol.com";
+export const SUPPORT_EMAIL = "soporte@entrenamientodeelite.online";
 
 /** Nombre de la marca */
-export const BRAND_NAME = "Entrenamiento de Fútbol";
+export const BRAND_NAME = "Entrenamiento de Élite";
 
 /** Abre el checkout en una nueva pestaña */
 export function openCheckout() {
