@@ -115,6 +115,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         async: true,
         defer: true,
       },
+      {
+        children: `window.pixelId = "6a56c2b742638a718dbd6bba"; var a = document.createElement("script"); a.setAttribute("async", ""); a.setAttribute("defer", ""); a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js"); document.head.appendChild(a);`,
+      },
     ],
   }),
   shellComponent: RootShell,
