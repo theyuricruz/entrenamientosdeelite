@@ -83,18 +83,21 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         content:
           "Biblioteca digital con 500 sesiones de entrenamiento de fútbol listas para aplicar. Técnica, táctica, físico y más. Acceso inmediato con garantía de 7 días.",
       },
-      { property: "og:title", content: "500 Sesiones de Entrenamiento de Fútbol" },
+      { property: "og:title", content: "500 Sesiones de Entrenamiento de Fútbol | Acceso Inmediato" },
       {
         property: "og:description",
         content:
-          "500 sesiones profesionales listas para aplicar. Ahorra horas de planificación y entrena como un profesional.",
+          "Biblioteca digital con 500 sesiones de entrenamiento de fútbol listas para aplicar. Técnica, táctica, físico y más. Acceso inmediato con garantía de 7 días.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "500 Sesiones de Entrenamiento de Fútbol | Acceso Inmediato" },
+      { name: "twitter:description", content: "Biblioteca digital con 500 sesiones de entrenamiento de fútbol listas para aplicar. Técnica, táctica, físico y más. Acceso inmediato con garantía de 7 días." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/9ab7c9f5-9788-440b-9a53-33beb34fec3e/id-preview-b0bf559b--1c325a84-7ce2-4bd4-8d80-e5028af612f5.lovable.app-1784036858189.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/9ab7c9f5-9788-440b-9a53-33beb34fec3e/id-preview-b0bf559b--1c325a84-7ce2-4bd4-8d80-e5028af612f5.lovable.app-1784036858189.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
