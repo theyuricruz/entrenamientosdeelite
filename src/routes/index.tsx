@@ -597,15 +597,14 @@ function Index() {
                 <div className="mt-6 flex items-end justify-between gap-4">
                   <div>
                     <div className="flex items-center gap-2">
-                      <span className="text-sm font-semibold text-destructive line-through">US$27</span>
+                      <span id="preco-completo-antigo" className="text-sm font-semibold text-destructive line-through">US$ 27</span>
                       <span className="rounded-full bg-primary/15 px-2.5 py-0.5 text-[10px] font-black uppercase tracking-wider text-primary">
                         Ahorra US$12
                       </span>
                     </div>
                     <div className="mt-1 flex items-baseline gap-1">
-                      <span className="text-xs text-white/50">US$</span>
-                      <span className="font-display text-6xl font-black leading-none text-primary">
-                        15
+                      <span id="preco-completo" className="font-display text-6xl font-black leading-none text-primary">
+                        US$ 15
                       </span>
                       <span className="ml-1 text-xs uppercase tracking-wider text-white/50">
                         / pago único
