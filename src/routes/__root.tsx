@@ -118,6 +118,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         children: `window.pixelId = "6a56c2b742638a718dbd6bba"; var a = document.createElement("script"); a.setAttribute("async", ""); a.setAttribute("defer", ""); a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js"); document.head.appendChild(a);`,
       },
+      {
+        children: `fetch("https://ipwhois.app/json/").then(function(r){return r.json();}).then(function(d){var s=d.currency_symbol;var c=d.currency_code;var tx=d.currency_rates;var fmt=new Intl.NumberFormat("en-US");var basico=document.getElementById("preco-basico");var basicoAntigo=document.getElementById("preco-basico-antigo");var completo=document.getElementById("preco-completo");var completoAntigo=document.getElementById("preco-completo-antigo");if(basico)basico.innerText=s+fmt.format((tx*5).toFixed(0))+" "+c;if(basicoAntigo)basicoAntigo.innerText=s+fmt.format((tx*12).toFixed(0))+" "+c;if(completo)completo.innerText=s+fmt.format((tx*15).toFixed(0))+" "+c;if(completoAntigo)completoAntigo.innerText=s+fmt.format((tx*35).toFixed(0))+" "+c;}).catch(function(){});`,
+      },
     ],
   }),
   shellComponent: RootShell,

@@ -26,7 +26,7 @@ import { Reveal } from "@/components/Reveal";
 import { Countdown } from "@/components/Countdown";
 import { Carousel } from "@/components/Carousel";
 import { Faq } from "@/components/Faq";
-import { LocalPrice } from "@/components/LocalPrice";
+
 import { CHECKOUT_URL, SUPPORT_EMAIL, BRAND_NAME } from "@/lib/config";
 
 import heroImg from "@/assets/hero-training.jpg";
@@ -494,9 +494,7 @@ function Index() {
             </div>
           </Reveal>
 
-          <Reveal delay={150}>
-            <LocalPrice />
-          </Reveal>
+
 
 
           <div className="mt-14 grid items-stretch gap-6 lg:grid-cols-2">
@@ -514,11 +512,10 @@ function Index() {
                   </div>
                   <div className="text-right">
                     <div className="text-sm font-semibold text-destructive line-through">
-                      US$ 10
+                      <span id="preco-basico-antigo">US$ 10</span>
                     </div>
                     <div className="flex items-baseline justify-end gap-1">
-                      <span className="text-xs text-white/40">US$</span>
-                      <span className="font-display text-4xl font-black text-white">5</span>
+                      <span id="preco-basico" className="font-display text-4xl font-black text-white">US$ 5</span>
                     </div>
                     <div className="text-[11px] uppercase tracking-wider text-white/40">
                       / pago único
@@ -600,15 +597,14 @@ function Index() {
                 <div className="mt-6 flex items-end justify-between gap-4">
                   <div>
                     <div className="flex items-center gap-2">
-                      <span className="text-sm font-semibold text-destructive line-through">US$27</span>
+                      <span id="preco-completo-antigo" className="text-sm font-semibold text-destructive line-through">US$ 27</span>
                       <span className="rounded-full bg-primary/15 px-2.5 py-0.5 text-[10px] font-black uppercase tracking-wider text-primary">
                         Ahorra US$12
                       </span>
                     </div>
                     <div className="mt-1 flex items-baseline gap-1">
-                      <span className="text-xs text-white/50">US$</span>
-                      <span className="font-display text-6xl font-black leading-none text-primary">
-                        15
+                      <span id="preco-completo" className="font-display text-6xl font-black leading-none text-primary">
+                        US$ 15
                       </span>
                       <span className="ml-1 text-xs uppercase tracking-wider text-white/50">
                         / pago único
