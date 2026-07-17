@@ -217,6 +217,12 @@ const scrollToOffer = () => {
 };
 
 function Index() {
+  const [today, setToday] = useState("");
+  useEffect(() => {
+    setToday(
+      new Intl.DateTimeFormat("es-ES", { weekday: "long", day: "numeric", month: "long" }).format(new Date())
+    );
+  }, []);
   return (
     <main className="min-h-screen bg-background text-foreground">
       {/* HERO */}
