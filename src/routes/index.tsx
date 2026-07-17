@@ -494,9 +494,7 @@ function Index() {
             </div>
           </Reveal>
 
-          <Reveal delay={150}>
-            <LocalPrice />
-          </Reveal>
+
 
 
           <div className="mt-14 grid items-stretch gap-6 lg:grid-cols-2">
