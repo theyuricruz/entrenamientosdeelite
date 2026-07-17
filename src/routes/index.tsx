@@ -26,7 +26,7 @@ import { Reveal } from "@/components/Reveal";
 import { Countdown } from "@/components/Countdown";
 import { Carousel } from "@/components/Carousel";
 import { Faq } from "@/components/Faq";
-import { LocalPrice } from "@/components/LocalPrice";
+
 import { CHECKOUT_URL, SUPPORT_EMAIL, BRAND_NAME } from "@/lib/config";
 
 import heroImg from "@/assets/hero-training.jpg";
