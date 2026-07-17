@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useEffect, useState } from "react";
 import {
   CheckCircle2,
   Clock,
@@ -216,6 +217,12 @@ const scrollToOffer = () => {
 };
 
 function Index() {
+  const [today, setToday] = useState("");
+  useEffect(() => {
+    setToday(
+      new Intl.DateTimeFormat("es-ES", { weekday: "long", day: "numeric", month: "long" }).format(new Date())
+    );
+  }, []);
   return (
     <main className="min-h-screen bg-background text-foreground">
       {/* HERO */}
@@ -224,7 +231,7 @@ function Index() {
         <div className="relative z-10 bg-gradient-to-r from-destructive via-destructive to-destructive/90 py-3 text-center shadow-lg shadow-destructive/20">
           <p className="mx-auto flex max-w-4xl items-center justify-center gap-2 px-4 text-sm font-bold uppercase tracking-[0.15em] text-destructive-foreground sm:text-base">
             <span className="inline-flex h-2 w-2 animate-pulse rounded-full bg-white" />
-            Descuento Exclusivo solo hoy, {new Intl.DateTimeFormat("es-ES", { weekday: "long", day: "numeric", month: "long" }).format(new Date())}
+            Descuento Exclusivo solo hoy{today ? `, ${today}` : ""}
           </p>
         </div>
         <div className="container-x relative py-16 sm:py-20 lg:py-28">
