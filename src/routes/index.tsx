@@ -512,11 +512,10 @@ function Index() {
                   </div>
                   <div className="text-right">
                     <div className="text-sm font-semibold text-destructive line-through">
-                      US$ 10
+                      <span id="preco-basico-antigo">US$ 10</span>
                     </div>
                     <div className="flex items-baseline justify-end gap-1">
-                      <span className="text-xs text-white/40">US$</span>
-                      <span className="font-display text-4xl font-black text-white">5</span>
+                      <span id="preco-basico" className="font-display text-4xl font-black text-white">US$ 5</span>
                     </div>
                     <div className="text-[11px] uppercase tracking-wider text-white/40">
                       / pago único
