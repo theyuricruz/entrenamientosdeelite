@@ -26,6 +26,7 @@ import { Reveal } from "@/components/Reveal";
 import { Countdown } from "@/components/Countdown";
 import { Carousel } from "@/components/Carousel";
 import { Faq } from "@/components/Faq";
+import { LocalPrice } from "@/components/LocalPrice";
 import { CHECKOUT_URL, SUPPORT_EMAIL, BRAND_NAME } from "@/lib/config";
 
 import heroImg from "@/assets/hero-training.jpg";
@@ -492,6 +493,11 @@ function Index() {
               </div>
             </div>
           </Reveal>
+
+          <Reveal delay={150}>
+            <LocalPrice />
+          </Reveal>
+
 
           <div className="mt-14 grid items-stretch gap-6 lg:grid-cols-2">
             {/* Plan Básico */}
